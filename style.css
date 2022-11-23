@@ -3,7 +3,6 @@
 } */
 
 
-
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -208,61 +207,6 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
-    letter-spacing: -0.02em;
-    color: #071D49;
-}
-
-
-#grad3
-{
-    background: linear-gradient(360deg, #E2EFFA 0%, #DCF3F0 72.92%);
-    border-radius: 130px 0px 130px 0px;
-    
-}
-
-.innovation{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 125%;
-    color: #071D49;
-
-}
-
-.title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 35px;
-
-    width: 314px;
-    height: 80px;
-
-}
-
-.percent{
-    font-size: 80px;
-    font-weight: 800;
-    color: #DCF3F0;
-    text-shadow: -0px 2px 2px #071D49, 2px 2px 2px #071D49, 2px -2px 0 #071D49,
-      -2px -2px 0 #071D49;
-    margin-top: -20px;
-    letter-spacing: 0.02em;
-}
-
-.percent2{
-    /* background: linear-gradient(#1ea59a 100%,#328edf 100%); */   
-    border-top: 2px solid #3BBFB5;
-
-}
-.access{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 125%;
     letter-spacing: -0.02em;
     color: #071D49;
 }
@@ -576,6 +520,69 @@
   display: flex;
 }
 
+.row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+.innovation-gardient 
+{
+  background: linear-gradient(180deg, #E2EFFA 0%, #DCF3F0 53.02%);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  border-radius: 105px 0px 105px 0px;
+  padding: 20px 105px;
+}
+
+.innovation-padding 
+{
+  padding: 50px 0px;
+}
+
+.section4-border-text 
+{
+  font-size: 80px;
+  color: #DCF3F0;
+  text-shadow: -2px 2px 2px #071D49, 2px 2px 2px #071D49, 2px -2px 0 #071D49,
+    -2px -2px 0 #071D49;
+  margin-top: -20px;
+  font-weight: 800;
+}
+
+.access1
+{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #071D49;
+  padding: 30px;
+}
+
+#border-innovation 
+{
+  border-top: 1px solid #3BBFB5;
+  padding: 50px 0px;
+}
+
+.desktop-padding 
+{
+  padding: 0px 35px;
+}
+
+.mobile-padding 
+{
+  padding: 0px 60px;
+}
+
+.access 
+{
+  font-size: 19px;
+  font-weight: 600;
+}
+
 
 /*------------------------------------------------------------------- media query for tablet----------------------- */
 
@@ -583,9 +590,14 @@
 @media (min-width: 767.98px) and (max-width: 1200px)
 {
  
+  
     form i
     {
         margin-right:auto;
+    }
+
+    .subhome-page{
+      padding: 0px 0px !important;
     }
 
     .subhome-heading
@@ -618,18 +630,6 @@
     #grad1
     {
         margin-top: -70px !important;
-    }
-
-    .title
-    {
-        display: flex !important;
-        flex-direction: column;
-        gap: 0px;
-    } 
-
-    .title .access{
-      margin-left: -70px;
-      padding-bottom: 20px;
     }
 
     .list1
@@ -762,24 +762,6 @@
         margin-left:-230px;
     }
 
-    .percent2
-    {
-        overflow-x: auto;
-    }
-
-    .percent2::-webkit-scrollbar {
-      width: 18px;
-      height: 2px;
-    }
-    
-    .percent2::-webkit-scrollbar-track {
-      background: #73f5ea;
-    }
-    
-    .percent2::-webkit-scrollbar-thumb {
-      background-color: #31beb3;   
-    }
-
     /* ---------footer--------- */
 
     .search-row 
@@ -847,7 +829,96 @@
 
       .container, .container-md, .container-sm 
       {
-        max-width: 891px !important;
+        max-width: 912px !important;
+      }
+
+
+      
+      .innovation-gardient 
+      {
+        padding: 82px 44px;
+      }
+
+      .innovation-padding
+      {
+        padding: 0px !important;
+      }
+
+      .innovation-padding .innovation-text-size 
+      {
+        padding-top: 20px;
+        font-size: 24px !important;
+      }
+
+      .section4-border-text 
+      {
+        font-size: 80px;
+        margin-top: -20px;
+        font-weight: 800;
+      }
+
+      .percent2 
+      {
+        overflow-x: scroll;
+      }
+    
+     .percent2::-webkit-scrollbar 
+      {
+        background: #3BBFB5;
+        border-radius: 10px;
+        height: 3px;
+      }
+      .percent2::-webkit-scrollbar-thumb 
+      {
+        border-radius: 10px;
+        /* -webkit-box-shadow: inset 0 0 6px rgba(95, 211, 240, 0.3); */
+        background-color: #0E867C;
+      }
+
+      .percent2::-webkit-scrollbar-track 
+      {
+        border-radius: 10px;
+        height: 1px !important;
+        background-color: #3BBFB5;
+        min-height: 40px;
+      }
+
+      .border-innovation 
+      {
+        border-top: 1px solid #000;
+        padding: 50px 0px;
+      }
+
+      #border-innovation 
+      {
+        border-top: 1px solid #000;
+      }
+
+      .desktop-padding 
+      {
+        padding: 0px 35px;
+      }
+
+      .mobile-padding 
+      {
+        padding: 0px 45px;
+      }
+
+      .access {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .percent{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start;
+      }
+
+      .access1
+      {
+        margin-top: -30px;
+        /* margin-bottom: -30px; */
       }
 }
 
@@ -867,6 +938,11 @@
     {
       font-size: 24px !important;
     }
+
+    .subhome-page{
+      padding: 0px 0px !important;
+    }
+    
     .subhome-heading
     {
         padding-left:40px !important;
@@ -1003,29 +1079,6 @@
     {
         padding-left: calc(var(--bs-gutter-x) * .5) !important;
     }
-    .title
-    {
-        display: flex !important;
-        flex-direction: column;
-        gap: 0px;
-        padding: 20px;
-        margin-left: -80px;
-    } 
-
-    .innovation
-    {
-      font-size: 24px !important;
-    }
-
-    .title .percent
-    {
-        margin-left: 40px;
-    }
-
-    .title .access
-    {
-      margin-left: -70px;
-    }
 
     .seeMore-btn
     {
@@ -1083,32 +1136,7 @@
             
     }
 
-    .percent2
-    {
-            overflow-x: auto;
-            display: flex !important;
-            flex-direction: column !important;
-    }
-   
-
-    .percent2 .fifty{
-      margin-left: -50px;
-      padding-top: 20px;
-    }
-
-    .percent2::-webkit-scrollbar {
-      width: 18px;
-      height: 2px;
-    }
     
-    .percent2::-webkit-scrollbar-track {
-      background: #73f5ea;
-    }
-    
-    .percent2::-webkit-scrollbar-thumb {
-      background-color: #31beb3;   
-    }
-
     /* ---------------footer------------------------- */
     .search-row 
     {
@@ -1165,4 +1193,101 @@
       }
     
 
+
+
+      .innovation-gardient 
+      {
+        border-radius: 105px 0px 105px 0px;
+        padding: 70px 15px;
+      }
+
+      .innovation-padding .innovation-text-size 
+      {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+      }
+
+      .section4-border-text 
+      {
+        font-size: 80px;
+        margin-top: -20px;
+        font-weight: 800;
+      }
+
+      .percent2 
+      {
+        display: flex;
+        flex-direction: column !important;
+      }
+  
+      .percent2 
+      {
+        overflow-x: scroll;
+      }
+
+      .percent2::-webkit-scrollbar 
+      {
+        background: #3BBFB5;
+        border-radius: 10px;
+        height: 3px;
+      }
+
+      .percent2::-webkit-scrollbar-thumb 
+      {
+        border-radius: 10px;
+        /* -webkit-box-shadow: inset 0 0 6px rgba(95, 211, 240, 0.3); */
+        background-color: #0E867C;
+      }
+
+      .percent2::-webkit-scrollbar-track 
+      {
+        border-radius: 10px;
+        height: 1px !important;
+        background-color: #3BBFB5;
+        min-height: 40px;
+      }
+
+      .percent2::-webkit-scrollbar 
+      {
+        background: #3BBFB5;
+        border-radius: 10px;
+        height: 2px !important;
+      }
+
+      #border-innovation 
+      {
+        border-top: 1px solid #000;
+      }
+
+      .desktop-padding 
+      {
+        padding: 0px 25px;
+      }
+
+      .mobile-padding 
+      {
+        padding: 10px 25px;
+      }
+
+      #faster
+      {
+        padding-left: 65px !important;
+      }
+      
+      .access1
+      {
+        padding: 0px !important;
+      }
+
+      .access 
+      {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .percent{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start;
+      }
 }
